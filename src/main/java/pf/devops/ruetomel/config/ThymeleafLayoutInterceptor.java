@@ -9,12 +9,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 // thanks to http://blog.codeleak.pl/2013/11/thymeleaf-template-layouts-in-spring.html
-public class ThymeleafLayoutInterceptor extends HandlerInterceptorAdapter {
+public class ThymeleafLayoutInterceptor //extends HandlerInterceptorAdapter
+{
 
     private static final String DEFAULT_LAYOUT = "layouts/default";
     private static final String DEFAULT_VIEW_ATTRIBUTE_NAME = "view";
 
-    @Override
+//    @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception
     {
         if (modelAndView == null || !modelAndView.hasView())

@@ -46,23 +46,23 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter
         return new KeycloakSpringBootConfigResolver();
     }
 
-//    @Bean
-//    public FilterRegistrationBean keycloakAuthenticationProcessingFilterRegistrationBean(
-//            KeycloakAuthenticationProcessingFilter filter)
-//    {
-//        FilterRegistrationBean registrationBean = new FilterRegistrationBean(filter);
-//        registrationBean.setEnabled(false);
-//        return registrationBean;
-//    }
-//
-//    @Bean
-//    public FilterRegistrationBean keycloakPreAuthActionsFilterRegistrationBean(
-//            KeycloakPreAuthActionsFilter filter)
-//    {
-//        FilterRegistrationBean registrationBean = new FilterRegistrationBean(filter);
-//        registrationBean.setEnabled(false);
-//        return registrationBean;
-//    }
+    @Bean
+    public FilterRegistrationBean keycloakAuthenticationProcessingFilterRegistrationBean(
+            KeycloakAuthenticationProcessingFilter filter)
+    {
+        FilterRegistrationBean registrationBean = new FilterRegistrationBean(filter);
+        registrationBean.setEnabled(false);
+        return registrationBean;
+    }
+
+    @Bean
+    public FilterRegistrationBean keycloakPreAuthActionsFilterRegistrationBean(
+            KeycloakPreAuthActionsFilter filter)
+    {
+        FilterRegistrationBean registrationBean = new FilterRegistrationBean(filter);
+        registrationBean.setEnabled(false);
+        return registrationBean;
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception
@@ -71,7 +71,7 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter
         http
                 .authorizeRequests()
 //                .antMatchers("/customers*").hasRole("USER")
-//                .antMatchers("/admin*").hasRole("ADMIN")
+                .antMatchers("/admin*").authenticated()
                 .anyRequest().permitAll();
     }
 }

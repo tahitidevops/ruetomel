@@ -5,11 +5,11 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 @Configuration
-public class WebMvcConfig extends WebMvcConfigurationSupport
+public class WebMvcConfig //extends WebMvcConfigurationSupport
 {
-    @Override
+//    @Override
     protected void addInterceptors(InterceptorRegistry registry)
     {
-        registry.addInterceptor(new ThymeleafLayoutInterceptor());
+//        registry.addInterceptor(new ThymeleafLayoutInterceptor());
     }
 }
