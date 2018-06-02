@@ -1,0 +1,8 @@
+# Mot de passe: hello
+dn: cn=webapp,dc=tahitidevops,dc=pf
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+objectClass: top
+cn: webapp
+userPassword:: e1NIQX1xdlRHSGR6RjZLTGF2dDRQTzBnczJhNnBRMDA9
+
