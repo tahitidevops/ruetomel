@@ -115,5 +115,8 @@
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.56" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:bootstrap:4.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:popper.js:1.14.1" level="project" />
   </component>
 </module>
