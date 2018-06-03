@@ -16,7 +16,10 @@
 //    private static final String DEFAULT_VIEW_ATTRIBUTE_NAME = "view";
 //
 ////    @Override
-//    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception
+//    public void postHandle(HttpServletRequest request,
+// HttpServletResponse response,
+// Object handler,
+// ModelAndView modelAndView) throws Exception
 //    {
 //        if (modelAndView == null || !modelAndView.hasView())
 //        {

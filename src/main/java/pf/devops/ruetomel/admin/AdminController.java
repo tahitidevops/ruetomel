@@ -5,15 +5,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class AdminController
-{
-    @GetMapping("/admin")
-    public ModelAndView admin()
-    {
-        ModelAndView mav = new ModelAndView("admin/index");
+public class AdminController {
 
-//        mav.
+  /**
+   * Index page for the admin section.
+   *
+   * @return a ModelAndView that will be used by Thymeleaf to generate the HTML content
+   */
+  @GetMapping("/admin")
+  public ModelAndView admin() {
+    ModelAndView mav = new ModelAndView("admin/index");
 
-        return mav;
-    }
+    //        mav.
+
+    return mav;
+  }
 }
